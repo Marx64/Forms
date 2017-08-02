@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <form action="index.html" method="POST" autocomplete="on">
+        <fieldset class="main-information">
+            <legend><h3>Main information</h3></legend>
+        <dl>
+            <div>
+                 <dt><label for="user_name">Your name:</label></dt>
+                    <dd><input type="text" name="user_name" placeholder="Please enter your name" required id="user_name"></dd>
+                 <dt><label for="user_email">Your email:</label></dt>
+                    <dd><input type="email" name="user_email" placeholder="Please enter your email" required id="user_email" ></dd>
+                 <dt><label for="user_age">Your age:</label></dt>
+                    <dd><input type="number" required id="user_age" placeholder="Please enter your age"></dd>
+                 <dt><label for="user_phone">Your phone:</label></dt>
+                    <dd><input type="tel" required id="user_phone" placeholder="Please enter your phone"></dd>
+                 <dt><lable for="user_password">Password:</lable></dt>
+                     <dd><input type="password"  name="password" placeholder="Please enter your password" id="user_password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters"></dd>
+            </div>
+            <div class="gender">
+               <dt>Gender:</dt>
+                <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="other"><br>
+            </div>
+            <dt>Birthday:</dt>
+            <dd>
+            <select name="day">
+                <option value="day">1</option>
+                <option value="day">2</option>
+                <option value="day">3</option>
+                <option value="day">4</option>
+                <option value="day" selected>5</option>
+                <option value="day">6</option>
+                <option value="day">7</option>
+            </select>
+            <select name="month">
+                <option value="month1">January</option>
+                <option value="month2">February</option>
+                <option value="month3">March</option>
+                <option value="month4">April</option>
+                <option value="month5">May</option>
+                <option value="month6">June</option>
+                <option value="month7">July</option>
+                <option value="month8">August</option>
+                <option value="month9">September</option>
+                <option value="month10">October </option>
+                <option value="month12" selected>November</option>
+                <option value="month">December</option>
+            </select>
+            <select name="year">
+                <option value="year">1990</option>
+                <option value="year">1991</option>
+                <option value="year">1992</option>
+                <option value="year">1993</option>
+                <option value="year" selected>1994</option>
+                <option value="year">1995</option>
+                <option value="year">1996</option>
+            </select>
+            </dd>
+        </dl>
+        </fieldset>
+        <fieldset class="other-inf">
+            <legend><h3>Other information</h3></legend>
+        <tr>
+            <dt><label for="company">Company:</label></dt>
+                <dd><input type="text" name="company" id="company"></dd>
+            <dt><label fot="position">Position:</label></dt>
+                <dd><input type="text" name="position" id="position"></dd>  
+        </tr>
+        <table class="skills">
+           <caption>Choose your skill level in technology</caption>
+            <tr>
+                <td><b>SQL</b></td>
+                <td><input type="radio" name="sql" value="1"></td>
+                <td><input type="radio" name="sql" value="2"></td>
+                <td><input type="radio" name="sql" value="3"></td>
+                <td><input type="radio" name="sql" value="4"></td>
+                <td><input type="radio" name="sql" value="5"></td>
+            </tr>
+            <tr>
+                <td><b>C++</b></td>
+                <td><input type="radio" name="c" value="1"></td>
+                <td><input type="radio" name="c" value="2"></td>
+                <td><input type="radio" name="c" value="3"></td>
+                <td><input type="radio" name="c" value="4"></td>
+                <td><input type="radio" name="c" value="5"></td>
+            </tr>
+            <tr>
+                <td><b>JavaScript</b></td>
+                <td><input type="radio" name="javascript" value="1"></td>
+                <td><input type="radio" name="javascript" value="2"></td>
+                <td><input type="radio" name="javascript" value="3"></td>
+                <td><input type="radio" name="javascript" value="4"></td>
+                <td><input type="radio" name="javascript" value="5"></td>
+            </tr>
+            <tr>
+                <td><b>Java</b></td>
+                <td><input type="radio" name="java" value="1"></td>
+                <td><input type="radio" name="java" value="2"></td>
+                <td><input type="radio" name="java" value="3"></td>
+                <td><input type="radio" name="java" value="4"></td>
+                <td><input type="radio" name="java" value="5"></td>
+            </tr>
+        </table>
+            
+        </fieldset>
+            <div class="chek" >
+                <lable for="chek" required>I agree to process my personal data<input type="checkbox" id="chek" required></lable>
+            
+                <p><input type="reset" value="Overturn"></p>
+                <p><input type="submit" value="Send"></p>
+            </div>
+        
+    </form>
+    
+</body>
+</html>

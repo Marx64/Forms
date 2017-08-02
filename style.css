@@ -1,0 +1,39 @@
+.main-information {
+    background-image: url(img/leaf_green.jpeg);
+    background-size: cover;
+}
+.main-information dt,
+.gender{
+    color:aqua;
+    font-size: 18px;
+}
+
+.other-inf {
+    
+    background-image: url(img/fields1920x1080.jpg);
+    background-size: cover;
+}
+
+h3 {
+    border: 1px solid green;
+    background-color: #FFFF00;
+}
+
+body {
+    background-image: url(img/wall.jpg);
+    background-size: cover;
+}
+
+.skills td {
+    padding: 10px;
+}
+
+caption {
+    font-style: oblique;
+    font-size: 18px;
+}
+
+.chek {
+    font-size: 18px;;
+    color:white;
+}
